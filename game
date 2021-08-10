@@ -1,0 +1,35 @@
+import random#import random module
+
+ans = True#create variable which is equal to True
+
+while ans:#while ans is equal to True we can ask question to our magic 8 ball
+    question = input("Ask the magic 8 ball a question: (press enter to quit) ")
+
+    answers = random.randint(1,8)#create variable answers which is equal to random number from 1 to 8
+  
+    if question == "":#if you want to quit the game you need to press enter
+        break
+
+    elif answers == 1:#if our random number is equal to 1,magic 8 ball answer - It is certain
+      print("It is certain")
+
+    elif answers == 2:#if our random number is equal to 2, magic 8 ball will answer - Outlook good
+      print("Outlook good")
+
+    elif answers == 3:#if our random number is equal to 3, magic 8 ball will answer - You may rely on it
+      print("You may rely on it")
+
+    elif answers == 4:#if our random number is equal to 4, magic 8 ball will answer - Ask again later
+       print("Ask again later")
+
+    elif answers == 5:#if our random number is equal to 5, magic 8 ball will answer - Concentrate and ask again
+      print("Concentrate and ask again")
+
+    elif answers == 6:#if our random number is equal to 6, magic 8 ball will answer - Reply hazy, try again
+      print("Reply hazy, try again")
+
+    elif answers == 7:#if our random number is equal to 7, magic 8 ball will answer - My reply is no
+      print("My reply is no")
+
+    elif answers == 8:#if our random number is equal to 8, magic 8 ball will answer - My sources say no
+      print("My sources say no")
